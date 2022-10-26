@@ -1,39 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <nav>
+                <p class="nav-item">Shop</p>
+                <p class="nav-item">Learn</p>
+                <p class="nav-item">Blog</p>
+                <p class="nav-item">Forums</p>
+                <p class="nav-item">LIVE!</p>
+                <p class="nav-item">AdaBox</p>
+                <p class="nav-item">IO</p>
+                <p class="nav-item">Sign In</p>
+                <p class="nav-item">Cart</p>
+            </nav>
+            <section class="banner">
+                <p class="banner-item">LOGO</p>
+                <p class="banner-item">Products</p>
+                <p class="banner-item">Gift Ideas</p>
+                <p class="banner-item">What's New</p>
+                <p class="banner-item">Search Bar</p>
+            </section>
+            <section class="splash">
+                <img src="#" alt="splash image" />
+            </section>
+            <section class="news">
+                <p class-="news-item">Latest News</p>
+                <p class-="news-item">News Item</p>
+            </section>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section id="new-products">
+                <header class="nuprod-header">
+                    <div>
+                        <h1>New Products</h1>
+                    </div>
+                    <div>
+                        <a href="#">View all new products</a>
+                    </div>
+                </header>
+                    <section id="nuprod-item-group">
+                        <div class="prod-card">
+                            <img src="#" alt="product image"  class="prod-img">
+                            <div class="prod-desc">Product 1</div>
+                            <div class="prod-price">Price</div>
+                            <div class="atc-button" id="atc-button">Add to Cart</div>
+                        </div>
+                        <div class="prod-card">
+                            <img src="#" alt="product image"  class="prod-img">
+                            <div class="prod-desc">Product 2</div>
+                            <div class="prod-price">Price</div>
+                            <div class="atc-button" id="atc-button">Add to Cart</div>
+                        </div>
+                        <div class="prod-card">
+                            <img src="#" alt="product image"  class="prod-img">
+                            <div class="prod-desc">Product 3</div>
+                            <div class="prod-price">Price</div>
+                            <div class="atc-button" id="atc-button">Add to Cart</div>
+                        </div>
+                        <div class="prod-card">
+                            <img src="#" alt="product image"  class="prod-img">
+                            <div class="prod-desc">Product 4</div>
+                            <div class="prod-price">Price</div>
+                            <div class="atc-button" id="atc-button">Add to Cart</div>
+                        </div>
+                    </section>
+            </section>
+            <img src="#" alt="spacer image" id="spacer-img"></img>
+            <section id="Featured-Products">
+                <header class="FeProd-header">
+                    <div>
+                        <h1>Featured Products</h1>
+                    </div>
+                    <div>
+                        <a href="#">View all featured products</a>
+                    </div>
+                </header>
+                <section id="feprod-item-group">
+                        <div class="prod-card">
+                            <img src="#" alt="product image"  class="prod-img">
+                            <div class="prod-desc">Product 1</div>
+                            <div class="prod-price">Price</div>
+                            <div class="atc-button" id="atc-button">Add to Cart</div>
+                        </div>
+                        <div class="prod-card">
+                            <img src="#" alt="product image"  class="prod-img">
+                            <div class="prod-desc">Product 2</div>
+                            <div class="prod-price">Price</div>
+                            <div class="atc-button" id="atc-button">Add to Cart</div>
+                        </div>
+                        <div class="prod-card">
+                            <img src="#" alt="product image"  class="prod-img">
+                            <div class="prod-desc">Product 3</div>
+                            <div class="prod-price">Price</div>
+                            <div class="atc-button" id="atc-button">Add to Cart</div>
+                        </div>
+                        <div class="prod-card">
+                            <img src="#" alt="product image"  class="prod-img">
+                            <div class="prod-desc">Product 4</div>
+                            <div class="prod-price">Price</div>
+                            <div class="atc-button" id="atc-button">Add to Cart</div>
+                        </div>
+                    </section>
+            </section>
+            <section class="Learn More"></section>
+        </main>
+    </body>
 </html>
